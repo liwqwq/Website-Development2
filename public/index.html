@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Events - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">CharityEvents</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="search.html" class="nav-link">Search Events</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-header">
+            <h1>City Charity Events</h1>
+            <p class="subtitle">Connecting charitable organizations with caring community members</p>
+        </header>
+
+        <section class="about-section">
+            <h2>About Our Mission</h2>
+            <p>We are a non-profit platform dedicated to helping charitable organizations showcase their fundraising events and enabling more people to participate in meaningful causes.</p>
+        </section>
+
+        <section class="events-section">
+            <h2>Upcoming Events</h2>
+            <div class="loading-spinner" id="loading-spinner">
+                <p>Loading events...</p>
+            </div>
+
+            <div id="events-list" class="events-list">
+                <!-- 动态内容将通过JavaScript填充 -->
+            </div>
+
+            <div class="no-events" id="no-events" style="display: none;">
+                <h3>No Events Found</h3>
+                <p>Check back later for new charity events</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CharityEvents. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

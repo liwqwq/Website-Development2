@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">CharityEvents</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="search.html" class="nav-link">Search Events</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="back-nav">
+            <a href="javascript:history.back()" class="back-link">← Back to Events</a>
+        </div>
+
+        <div id="event-detail">
+            <div class="loading-event">
+                <p>Loading event details...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 注册模态框 -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <h3>Notice</h3>
+            <p>This feature is currently under construction.</p>
+            <button onclick="closeModal()" class="btn-primary">Close</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CharityEvents. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="event.js"></script>
+</body>
+</html>
